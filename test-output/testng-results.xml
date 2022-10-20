@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-20T18:47:56 IST" name="Suite" finished-at="2022-10-20T18:48:09 IST" duration-ms="13580">
+  <suite started-at="2022-10-20T20:20:18 IST" name="Suite" finished-at="2022-10-20T20:20:43 IST" duration-ms="25423">
     <groups>
       <group name="FLVs">
-        <method signature="LoginFLVs.logInFLV(java.util.HashMap)[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@78d6692f]" name="logInFLV" class="Ecommerce.EcommerceOder.LoginFLVs"/>
+        <method signature="LoginFLVs.logInFLV(java.util.HashMap)[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@60129b9a]" name="logInFLV" class="Ecommerce.EcommerceOder.LoginFLVs"/>
       </group> <!-- FLVs -->
     </groups>
-    <test started-at="2022-10-20T18:47:56 IST" name="LoginValidations" finished-at="2022-10-20T18:48:08 IST" duration-ms="12716">
+    <test started-at="2022-10-20T20:20:18 IST" name="LoginValidations" finished-at="2022-10-20T20:20:28 IST" duration-ms="10240">
       <class name="Ecommerce.EcommerceOder.LoginFLVs">
-        <test-method is-config="true" signature="lunchApp()[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@78d6692f]" started-at="2022-10-20T18:47:56 IST" name="lunchApp" finished-at="2022-10-20T18:48:02 IST" duration-ms="6109" status="PASS">
+        <test-method is-config="true" signature="lunchApp()[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@60129b9a]" started-at="2022-10-20T20:20:18 IST" name="lunchApp" finished-at="2022-10-20T20:20:23 IST" duration-ms="5232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchApp -->
-        <test-method signature="logInFLV(java.util.HashMap)[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@78d6692f]" started-at="2022-10-20T18:48:02 IST" name="logInFLV" data-provider="data" finished-at="2022-10-20T18:48:03 IST" duration-ms="1048" status="PASS">
+        <test-method signature="logInFLV(java.util.HashMap)[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@60129b9a]" started-at="2022-10-20T20:20:23 IST" name="logInFLV" data-provider="data" finished-at="2022-10-20T20:20:24 IST" duration-ms="664" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,15 +25,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logInFLV -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@78d6692f]" started-at="2022-10-20T18:48:03 IST" name="tearDown" finished-at="2022-10-20T18:48:04 IST" duration-ms="483" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@60129b9a]" started-at="2022-10-20T20:20:24 IST" name="tearDown" finished-at="2022-10-20T20:20:24 IST" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="lunchApp()[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@78d6692f]" started-at="2022-10-20T18:48:04 IST" name="lunchApp" finished-at="2022-10-20T18:48:08 IST" duration-ms="3823" status="PASS">
+        <test-method is-config="true" signature="lunchApp()[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@60129b9a]" started-at="2022-10-20T20:20:24 IST" name="lunchApp" finished-at="2022-10-20T20:20:27 IST" duration-ms="3131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchApp -->
-        <test-method signature="logInFLV(java.util.HashMap)[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@78d6692f]" started-at="2022-10-20T18:48:08 IST" name="logInFLV" data-provider="data" finished-at="2022-10-20T18:48:08 IST" duration-ms="517" status="PASS">
+        <test-method signature="logInFLV(java.util.HashMap)[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@60129b9a]" started-at="2022-10-20T20:20:27 IST" name="logInFLV" data-provider="data" finished-at="2022-10-20T20:20:28 IST" duration-ms="517" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,19 +44,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logInFLV -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@78d6692f]" started-at="2022-10-20T18:48:08 IST" name="tearDown" finished-at="2022-10-20T18:48:08 IST" duration-ms="150" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@60129b9a]" started-at="2022-10-20T20:20:28 IST" name="tearDown" finished-at="2022-10-20T20:20:28 IST" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Ecommerce.EcommerceOder.LoginFLVs -->
     </test> <!-- LoginValidations -->
-    <test started-at="2022-10-20T18:47:56 IST" name="Make a Order" finished-at="2022-10-20T18:48:09 IST" duration-ms="13580">
+    <test started-at="2022-10-20T20:20:29 IST" name="Make a Order" finished-at="2022-10-20T20:20:43 IST" duration-ms="14626">
       <class name="Ecommerce.EcommerceOder.MakeOrder">
-        <test-method is-config="true" signature="lunchApp()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@6bffbc6d]" started-at="2022-10-20T18:47:56 IST" name="lunchApp" finished-at="2022-10-20T18:48:03 IST" duration-ms="6738" status="PASS">
+        <test-method is-config="true" signature="lunchApp()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@53f6fd09]" started-at="2022-10-20T20:20:29 IST" name="lunchApp" finished-at="2022-10-20T20:20:32 IST" duration-ms="3420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchApp -->
-        <test-method signature="makeOrder()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@6bffbc6d]" started-at="2022-10-20T18:48:03 IST" name="makeOrder" finished-at="2022-10-20T18:48:09 IST" duration-ms="6103" status="FAIL">
+        <test-method signature="makeOrder()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@53f6fd09]" started-at="2022-10-20T20:20:32 IST" name="makeOrder" finished-at="2022-10-20T20:20:43 IST" duration-ms="10854" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element is not clickable at point (1078, 653)
@@ -64,10 +64,10 @@
 Build info: version: '4.5.0', revision: 'fe167b119a'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9adc314a0fcfbde1b9ce50071952ea5f, clickElement {id=fb454b97-5c57-40e2-9cc9-cc516bda912a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Avenger\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57434}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57434/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (9adc314a0fcfbde1b9ce50071952ea5f)] -> css selector: .btnn]
-Session ID: 9adc314a0fcfbde1b9ce50071952ea5f]]>
+Command: [70319052d605f1f5f03c5546048ca710, clickElement {id=e828ab99-fbbb-47e4-8855-0e5f1cc135dc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Avenger\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50744}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50744/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (70319052d605f1f5f03c5546048ca710)] -> css selector: .btnn]
+Session ID: 70319052d605f1f5f03c5546048ca710]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1078, 653)
@@ -75,10 +75,10 @@ Session ID: 9adc314a0fcfbde1b9ce50071952ea5f]]>
 Build info: version: '4.5.0', revision: 'fe167b119a'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9adc314a0fcfbde1b9ce50071952ea5f, clickElement {id=fb454b97-5c57-40e2-9cc9-cc516bda912a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Avenger\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57434}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57434/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (9adc314a0fcfbde1b9ce50071952ea5f)] -> css selector: .btnn]
-Session ID: 9adc314a0fcfbde1b9ce50071952ea5f
+Command: [70319052d605f1f5f03c5546048ca710, clickElement {id=e828ab99-fbbb-47e4-8855-0e5f1cc135dc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Avenger\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50744}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50744/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (70319052d605f1f5f03c5546048ca710)] -> css selector: .btnn]
+Session ID: 70319052d605f1f5f03c5546048ca710
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -117,30 +117,35 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- makeOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@6bffbc6d]" started-at="2022-10-20T18:48:09 IST" name="tearDown" finished-at="2022-10-20T18:48:09 IST" duration-ms="356" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@53f6fd09]" started-at="2022-10-20T20:20:43 IST" name="tearDown" finished-at="2022-10-20T20:20:43 IST" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="checkOrder()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@6bffbc6d]" started-at="2022-10-20T18:48:09 IST" name="checkOrder" finished-at="2022-10-20T18:48:09 IST" depends-on-methods="Ecommerce.EcommerceOder.MakeOrder.makeOrder" duration-ms="0" status="SKIP">
+        <test-method signature="checkOrder()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@53f6fd09]" started-at="2022-10-20T20:20:43 IST" name="checkOrder" finished-at="2022-10-20T20:20:43 IST" depends-on-methods="Ecommerce.EcommerceOder.MakeOrder.makeOrder" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method MakeOrder.checkOrder()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@6bffbc6d] depends on not successfully finished methods]]>
+              <![CDATA[Method MakeOrder.checkOrder()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@53f6fd09] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method MakeOrder.checkOrder()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@6bffbc6d] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method MakeOrder.checkOrder()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@53f6fd09] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -148,13 +153,18 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.Throwable -->

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests" thread-count="2" >
+<suite name="Suite"  >
 
 <listeners>
 <listener class-name="GlobalProp.Listener"/>
-</listeners> <test thread-count="5" name="LoginValidations">
+</listeners> <test  name="LoginValidations">
     <classes>
       <class name="Ecommerce.EcommerceOder.LoginFLVs"/>
      </classes>
   </test>
-<test thread-count="5" name="Make a Order">
+<test  name="Make a Order">
     <classes>
       <class name="Ecommerce.EcommerceOder.MakeOrder"/>
      </classes>
