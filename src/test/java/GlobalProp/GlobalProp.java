@@ -45,7 +45,7 @@ public class GlobalProp {
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
 		ChromeOptions options=new ChromeOptions();
-		
+		options.addArguments("--remote-allow-origins=*");
 		WebDriverManager.chromedriver().setup();
 		if(browserName.contains("headless")) {
 			options.addArguments("browser");
