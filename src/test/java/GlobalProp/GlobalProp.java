@@ -18,6 +18,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -33,44 +34,45 @@ public class GlobalProp {
 
 	public LoginPage login;
 	public WebDriver driver;
-	public WebDriver inializeDriver() throws IOException
-	{
-		
-		
-		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"//src//test//java//GlobalProperties.properties");
-		Properties prop=new Properties();
-		prop.load(fis);
-		String browserName=prop.getProperty("browser");
-		
-		if(browserName.equalsIgnoreCase("chrome"))
-		{
-		ChromeOptions options=new ChromeOptions();
-		options.addArguments("--remote-allow-origins=*");
-		WebDriverManager.chromedriver().setup();
-		if(browserName.contains("headless")) {
-			options.addArguments("browser");
-		}
-		driver= new ChromeDriver(options);
-		}
-		else if(browserName.equalsIgnoreCase("firefox"))
-		{
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"//Drivers//geckodriver.exe");
-			driver = new FirefoxDriver();
-		}
-		else if(browserName.equalsIgnoreCase("edge"))
-		{
-			System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"//Drivers//msedgedriver.exe");
-			driver=new EdgeDriver();
-		}
-		else
-		{
-			
-		}
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
-		return driver;
+	public WebDriver inializeDriver() throws IOException {
+	    Properties prop = new Properties();
+	    FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//src//test//java//GlobalProperties.properties");
+	    prop.load(fis);
+	    String browserName = prop.getProperty("browser").toLowerCase();
 
+	    switch (browserName) {
+	        case "chrome":
+	        case "chrome-headless":
+	            ChromeOptions chromeOptions = new ChromeOptions();
+	            chromeOptions.addArguments("--remote-allow-origins=*");
+	            WebDriverManager.chromedriver().setup();
+	            if (browserName.contains("headless")) {
+	                chromeOptions.addArguments("--headless=new");
+	            }
+	            driver = new ChromeDriver(chromeOptions);
+	            break;
+
+	        case "firefox":
+	            // Force WebDriverManager to use a specific geckodriver version
+	        	FirefoxOptions options = new FirefoxOptions();
+	        	options.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe"); // adjust if installed elsewhere
+	        	driver = new FirefoxDriver(options);
+	            break;
+
+	        case "edge":
+	            WebDriverManager.edgedriver().setup();
+	            driver = new EdgeDriver();
+	            break;
+
+	        default:
+	            throw new IllegalArgumentException("Unsupported browser: " + browserName);
+	    }
+
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	    return driver;
 	}
+
 	
 	@BeforeMethod(alwaysRun=true)
 	public LoginPage lunchApp() throws IOException
@@ -82,9 +84,10 @@ public class GlobalProp {
 	}
 	
 	@AfterMethod(alwaysRun=true)
-	public void tearDown()
-	{
-		driver.close();
+	public void tearDown() {
+	    if (driver != null) {
+	        driver.close();
+	    }
 	}
 	
 	public List<HashMap<String, String>> getJsonDataToMap(String path) throws IOException
