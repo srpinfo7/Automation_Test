@@ -1,17 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-11T18:54:46 IST" name="Default suite" finished-at="2025-06-11T18:55:08 IST" duration-ms="22517">
+  <suite started-at="2025-06-11T20:27:19 IST" name="Suite" finished-at="2025-06-11T20:28:28 IST" duration-ms="69230">
     <groups>
+      <group name="FLVs">
+        <method signature="LoginFLVs.logInFLV(java.util.HashMap)[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@1869fbd2]" name="logInFLV" class="Ecommerce.EcommerceOder.LoginFLVs"/>
+      </group> <!-- FLVs -->
     </groups>
-    <test started-at="2025-06-11T18:54:46 IST" name="Default test" finished-at="2025-06-11T18:55:08 IST" duration-ms="22517">
-      <class name="Ecommerce.EcommerceOder.MakeOrder">
-        <test-method is-config="true" signature="lunchApp()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@1de5f259]" started-at="2025-06-11T18:54:46 IST" name="lunchApp" finished-at="2025-06-11T18:54:51 IST" duration-ms="5244" status="PASS">
+    <test started-at="2025-06-11T20:27:19 IST" name="LoginValidations" finished-at="2025-06-11T20:27:31 IST" duration-ms="12017">
+      <class name="Ecommerce.EcommerceOder.LoginFLVs">
+        <test-method is-config="true" signature="lunchApp()[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@1869fbd2]" started-at="2025-06-11T20:27:19 IST" name="lunchApp" finished-at="2025-06-11T20:27:26 IST" duration-ms="6883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchApp -->
-        <test-method signature="makeOrder(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@1de5f259]" started-at="2025-06-11T18:54:51 IST" name="makeOrder" data-provider="orderData" finished-at="2025-06-11T18:55:03 IST" duration-ms="12477" status="PASS">
+        <test-method signature="logInFLV(java.util.HashMap)[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@1869fbd2]" started-at="2025-06-11T20:27:26 IST" name="logInFLV" data-provider="data" finished-at="2025-06-11T20:27:27 IST" duration-ms="638" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Sameer, email=Sameer@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInFLV -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@1869fbd2]" started-at="2025-06-11T20:27:27 IST" name="tearDown" finished-at="2025-06-11T20:27:27 IST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="lunchApp()[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@1869fbd2]" started-at="2025-06-11T20:27:27 IST" name="lunchApp" finished-at="2025-06-11T20:27:30 IST" duration-ms="3215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lunchApp -->
+        <test-method signature="logInFLV(java.util.HashMap)[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@1869fbd2]" started-at="2025-06-11T20:27:30 IST" name="logInFLV" data-provider="data" finished-at="2025-06-11T20:27:31 IST" duration-ms="591" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Sameer@123, email=Samee@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInFLV -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Ecommerce.EcommerceOder.LoginFLVs@1869fbd2]" started-at="2025-06-11T20:27:31 IST" name="tearDown" finished-at="2025-06-11T20:27:31 IST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Ecommerce.EcommerceOder.LoginFLVs -->
+    </test> <!-- LoginValidations -->
+    <test started-at="2025-06-11T20:27:32 IST" name="Make a Order" finished-at="2025-06-11T20:28:28 IST" duration-ms="56694">
+      <class name="Ecommerce.EcommerceOder.MakeOrder">
+        <test-method is-config="true" signature="lunchApp()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@1a20270e]" started-at="2025-06-11T20:27:32 IST" name="lunchApp" finished-at="2025-06-11T20:27:34 IST" duration-ms="1965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lunchApp -->
+        <test-method signature="makeOrder(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@1a20270e]" started-at="2025-06-11T20:27:34 IST" name="makeOrder" data-provider="orderData" finished-at="2025-06-11T20:27:46 IST" duration-ms="12439" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,23 +77,52 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- makeOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@1de5f259]" started-at="2025-06-11T18:55:03 IST" name="tearDown" finished-at="2025-06-11T18:55:04 IST" duration-ms="215" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@1a20270e]" started-at="2025-06-11T20:27:46 IST" name="tearDown" finished-at="2025-06-11T20:27:46 IST" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="lunchApp()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@1de5f259]" started-at="2025-06-11T18:55:04 IST" name="lunchApp" finished-at="2025-06-11T18:55:07 IST" duration-ms="3462" status="PASS">
+        <test-method is-config="true" signature="lunchApp()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@1a20270e]" started-at="2025-06-11T20:27:46 IST" name="lunchApp" finished-at="2025-06-11T20:27:51 IST" duration-ms="4339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchApp -->
-        <test-method signature="checkOrder()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@1de5f259]" started-at="2025-06-11T18:55:07 IST" name="checkOrder" finished-at="2025-06-11T18:55:08 IST" depends-on-methods="Ecommerce.EcommerceOder.MakeOrder.makeOrder" duration-ms="936" status="PASS">
+        <test-method signature="makeOrder(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@1a20270e]" started-at="2025-06-11T20:27:51 IST" name="makeOrder" data-provider="orderData" finished-at="2025-06-11T20:28:04 IST" duration-ms="13858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sameer@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sameer@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ADIDAS ORIGINAL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makeOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@1a20270e]" started-at="2025-06-11T20:28:04 IST" name="tearDown" finished-at="2025-06-11T20:28:05 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="lunchApp()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@1a20270e]" started-at="2025-06-11T20:28:05 IST" name="lunchApp" finished-at="2025-06-11T20:28:27 IST" duration-ms="22552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lunchApp -->
+        <test-method signature="checkOrder()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@1a20270e]" started-at="2025-06-11T20:28:27 IST" name="checkOrder" finished-at="2025-06-11T20:28:28 IST" depends-on-methods="Ecommerce.EcommerceOder.MakeOrder.makeOrder" duration-ms="1034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@1de5f259]" started-at="2025-06-11T18:55:08 IST" name="tearDown" finished-at="2025-06-11T18:55:08 IST" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Ecommerce.EcommerceOder.MakeOrder@1a20270e]" started-at="2025-06-11T20:28:28 IST" name="tearDown" finished-at="2025-06-11T20:28:28 IST" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Ecommerce.EcommerceOder.MakeOrder -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Make a Order -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -48,6 +48,6 @@ public class MakeOrder extends GlobalProp {
 	@DataProvider
 	public Object[][] orderData()
 	{
-		return new Object[][] {{"sameer@gmail.com", "Sameer@123","zara coat 3"}};
+		return new Object[][] {{"sameer@gmail.com", "Sameer@123","zara coat 3"},{"sameer@gmail.com", "Sameer@123","ADIDAS ORIGINAL"}};
 	}
 }
