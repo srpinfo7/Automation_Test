@@ -45,6 +45,7 @@ public class GlobalProp {
 	        case "chrome-headless":
 	            ChromeOptions chromeOptions = new ChromeOptions();
 	            chromeOptions.addArguments("--remote-allow-origins=*");
+	            chromeOptions.addArguments("--incognito");
 	            WebDriverManager.chromedriver().setup();
 	            if (browserName.contains("headless")) {
 	                chromeOptions.addArguments("--headless=new");

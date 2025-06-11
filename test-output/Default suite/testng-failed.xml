@@ -7,7 +7,6 @@
         <methods>
           <include name="tearDown"/>
           <include name="makeOrder"/>
-          <include name="checkOrder"/>
           <include name="lunchApp"/>
         </methods>
       </class> <!-- Ecommerce.EcommerceOder.MakeOrder -->

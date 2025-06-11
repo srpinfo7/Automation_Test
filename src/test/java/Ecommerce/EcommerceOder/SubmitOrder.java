@@ -1,4 +1,4 @@
-package Ecommerce.EcommerceOder;
+	package Ecommerce.EcommerceOder;
 
 import java.time.Duration;
 import java.util.List;
@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -21,7 +22,10 @@ public class SubmitOrder {
 		// TODO Auto-generated method stub
 		
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver=new ChromeDriver();
+		ChromeOptions option=new ChromeOptions();
+		option.addArguments("--remote-allow-origins=*");
+		option.addArguments("--incognito");			
+		WebDriver driver=new ChromeDriver(option);
 		
 		String prodname="iphone 13 pro";
 		driver.manage().window().maximize();
@@ -44,6 +48,7 @@ public class SubmitOrder {
 		prod.findElement(By.cssSelector(".card-body button:last-of-type")).click();
 		
 		w.until(ExpectedConditions.visibilityOfElementLocated(By.id("toast-container")));
+		//w.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".ng-animating")));
 		w.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))));
 		
 		driver.findElement(By.xpath("//button[@routerlink=\"/dashboard/cart\"]")).click();

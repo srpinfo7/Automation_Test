@@ -12,6 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Ecommerce.EcommerceOder.AbstractComp.AbstractComponents;
@@ -21,12 +22,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class MakeOrder extends GlobalProp {
 	String prodname = "zara coat 3";
-	@Test
-	public void makeOrder() throws IOException, InterruptedException {
+	@Test(dataProvider = "orderData")
+	public void makeOrder(String username,String password,String prodname) throws IOException, InterruptedException {
 
 		
 		String country = "India";
-		ProdCat pro = login.loginApplication("sameer@gmail.com", "Sameer@123");
+		ProdCat pro = login.loginApplication(username, password);
 		CartSection cs = pro.addToCart(prodname);
 		CheckOut ck = cs.placeOrder(prodname);
 		ConfirmationPage cm = ck.checkOut(country);
@@ -41,5 +42,12 @@ public class MakeOrder extends GlobalProp {
 		ProdCat pro = login.loginApplication("sameer@gmail.com", "Sameer@123");
 		OrderSection ord=pro.clickOnOrder();
 		Assert.assertTrue(ord.order(prodname));
+	}
+	
+	
+	@DataProvider
+	public Object[][] orderData()
+	{
+		return new Object[][] {{"sameer@gmail.com", "Sameer@123","zara coat 3"}};
 	}
 }
