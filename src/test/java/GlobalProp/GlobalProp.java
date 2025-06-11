@@ -60,18 +60,26 @@ public class GlobalProp {
 			break;
 
 		case "firefox":
+		case "firefox-headless":
 			// Force WebDriverManager to use a specific geckodriver version
 			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions options = new FirefoxOptions();
 			options.addArguments("--incognito");
+			if (browserName.contains("headless")) {
+				options.addArguments("-headless");
+			}
 			driver = new FirefoxDriver(options);
 			break;
 
 		case "edge":
+		case "edge-headless":
 			WebDriverManager.edgedriver().setup();
 			EdgeOptions edgeOptions = new EdgeOptions();
 			edgeOptions.addArguments("--remote-allow-origins=*");
 			edgeOptions.addArguments("--incognito");
+			if (browserName.contains("headless")) {
+				edgeOptions.addArguments("--headless");
+			}
 			driver = new EdgeDriver(edgeOptions);
 			break;
 

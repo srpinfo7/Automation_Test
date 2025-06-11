@@ -11,8 +11,9 @@ public class ExtentReporterNG {
 	
 	public static ExtentReports getExtendReport()
 	{
-		 String timeStamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
-	        String reportPath = System.getProperty("user.dir") + "/reports/TestReport_" + timeStamp + ".html";
+		    String timeStamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
+	        String reportPath = System.getProperty("user.dir") + "/reports/TestReport_index.html";
+	        //String reportPath = System.getProperty("user.dir") + "/reports/TestReport_" + timeStamp + ".html";
 
 	        // ✅ Setting up SparkReporter
 	        ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
